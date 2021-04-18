@@ -13,7 +13,7 @@ RUN npm install
 # This step is not needed, currently, because my `docker run...` command
 # creates a volume against the host machine directory that contains all
 # the source files.
-#COPY . .
+COPY . .
 
 CMD npm run start
 
